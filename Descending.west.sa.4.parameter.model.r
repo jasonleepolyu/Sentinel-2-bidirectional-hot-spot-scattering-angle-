@@ -6,7 +6,8 @@
 ### This code is implemented for the following submitted paper:
 ### Investigation of Sentinel-2 bidirectional hot-spot sensing conditions, IEEE Transactions on Geoscience and Remote Sensing, 2018. 
 ##########################################################################################################################################
-source("Descending.west.sa.4.parameter.model.r")
+
+# To run: source("Descending.west.sa.4.parameter.model.r")
 
 rm(list = ls())
 if (!exists("cove_data"))  cove_data <- read.table(file="./COVE.data.2016.v3.txt", header=TRUE, sep="\t")
