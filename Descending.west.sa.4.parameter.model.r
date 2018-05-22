@@ -1,9 +1,9 @@
 ############################################################################################################ 
-### This code is used to calculate the 4-parameter model scattering angles on COVE descending orbit western edges 
+### This code is used to calculate the Sentinel-2 scattering angles on COVE descending orbit western edges using 4-parameter model (without time and location info provided by COVE KML files)
 ### Zhongbin.li@sdstate.edu
 ### hankui.zhang@sdstate.edu
 ### david.roy@sdstate.edu 
-### This code is implemented in the following submitted paper:
+### This code is implemented for the following submitted paper:
 ### Investigation of Sentinel-2 bidirectional hot-spot sensing conditions, IEEE Transactions on Geoscience and Remote Sensing, 2018. 
 ##########################################################################################################################################
 source("Descending.west.sa.4.parameter.model.r")
@@ -168,10 +168,10 @@ names(cove_data)
  
  dDeclination <- asin( sin( dEclipticObliquity )*dSin_EclipticLongitude );
  
- dLocalMeanSiderealTime <- (6.6974243242 + 0.0657098283 * dElapsedJulianDays + model_west_lt ) * 15 * rad;  ###    West_lt    hour + West_lon/15    hour + longitude/15
+ dLocalMeanSiderealTime <- (6.6974243242 + 0.0657098283 * dElapsedJulianDays + model_west_lt ) * 15 * rad;  ###    local time on the western edge 
  
  dHourAngle <- dLocalMeanSiderealTime - dRightAscension;
- dLatitudeInRadians <- modeled_west_lat * rad;
+ dLatitudeInRadians <- modeled_west_lat * rad;    ### latitude 
  dCos_Latitude <- cos( dLatitudeInRadians );
  dSin_Latitude <- sin( dLatitudeInRadians );
  dCos_HourAngle <- cos( dHourAngle );

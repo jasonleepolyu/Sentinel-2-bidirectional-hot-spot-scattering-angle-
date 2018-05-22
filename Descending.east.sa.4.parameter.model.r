@@ -1,12 +1,13 @@
 ############################################################################################################ 
-### This code is used to calculate the 4-parameter model scattering angles on COVE descending orbit eastern edges 
+### This code is used to calculate the Sentinel-2 scattering angles on COVE descending orbit eastern edges using 4 parameter model (without time and location info provided by COVE KML files)  
 ### Zhongbin.li@sdstate.edu
 ### hankui.zhang@sdstate.edu
 ### david.roy@sdstate.edu 
-### This code is implemented in the following submitted paper:
+### This code is implemented for the following submitted paper:
 ### Investigation of Sentinel-2 bidirectional hot-spot sensing conditions, IEEE Transactions on Geoscience and Remote Sensing, 2018. 
 ##########################################################################################################################################
-source("Descending.east.sa.4.parameter.model.r")
+
+# To run: source("Descending.east.sa.4.parameter.model.r")
 
 rm(list = ls())
 if (!exists("cove_data"))  cove_data <- read.table(file="./COVE.data.2016.v3.txt", header=TRUE, sep="\t")
@@ -165,10 +166,10 @@ if (!exists("cove_data"))  cove_data <- read.table(file="./COVE.data.2016.v3.txt
  
  dDeclination <- asin( sin( dEclipticObliquity )*dSin_EclipticLongitude );
   
- dLocalMeanSiderealTime <- (6.6974243242 + 0.0657098283 * dElapsedJulianDays +  model_east_lt ) * 15 * rad;  ###    West_lt    hour + West_lon/15    hour + longitude/15
+ dLocalMeanSiderealTime <- (6.6974243242 + 0.0657098283 * dElapsedJulianDays +  model_east_lt ) * 15 * rad;  ###  local time on the eastern edge 
  
  dHourAngle <- dLocalMeanSiderealTime - dRightAscension;
- dLatitudeInRadians <- modeled_east_lat * rad;
+ dLatitudeInRadians <- modeled_east_lat * rad;   ### latitude 
  dCos_Latitude <- cos( dLatitudeInRadians );
  dSin_Latitude <- sin( dLatitudeInRadians );
  dCos_HourAngle <- cos( dHourAngle );
