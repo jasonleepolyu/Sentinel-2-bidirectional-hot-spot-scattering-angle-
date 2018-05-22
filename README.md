@@ -25,21 +25,21 @@ Usage:
 NOTE some variables in "COVE.SA.6.parameter.model.r": 
 
 #### descending orbit or ascending orbit 
-index <- ad=="ascending" for COVE ascending orbit granules 
-index <- ad=="decending" for COVE descending orbit granules 
+- index <- ad=="ascending" for COVE ascending orbit granules 
+- index <- ad=="decending" for COVE descending orbit granules 
 
 #### Western edges 
-West_lon[i] <- as.numeric(temp[3])  for COVE ascending orbit western edges    
-West_lat[i] <- as.numeric(temp[4])  for COVE ascending orbit western edges 
+- West_lon[i] <- as.numeric(temp[3])  for COVE ascending orbit western edges    
+- West_lat[i] <- as.numeric(temp[4])  for COVE ascending orbit western edges 
 
-West_lon[i] <- as.numeric(temp[7])  for COVE descending orbit western edges 
-West_lat[i] <- as.numeric(temp[8])  for COVE descending orbit western edges 
+- West_lon[i] <- as.numeric(temp[7])  for COVE descending orbit western edges 
+- West_lat[i] <- as.numeric(temp[8])  for COVE descending orbit western edges 
 
 ### visual azimuth angle 
-vaa <- j + 3*pi/2   ### for descending eastern edges 
-vaa <- j + pi/2     ### for descending western edges
-vaa <- pi/2 - j     ### for ascending western edges  
-vaa <- 3 * pi/2 - j ### for ascending eastern edges   
+- vaa <- j + 3*pi/2   ### for descending eastern edges 
+- vaa <- j + pi/2     ### for descending western edges
+- vaa <- pi/2 - j     ### for ascending western edges  
+- vaa <- 3 * pi/2 - j ### for ascending eastern edges   
 
 References:
 
