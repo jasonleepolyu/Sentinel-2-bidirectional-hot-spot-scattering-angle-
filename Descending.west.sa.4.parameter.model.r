@@ -194,13 +194,13 @@ names(cove_data)
  
  dZenithAngle <- (dZenithAngle + dParallax)/rad;
  
- # View zenith angle
+ ### View zenith angle
  vza <- 11.93 * pi/180 
- 
+ ### Relative azimuth angle 
  raa <- dAzimuth*pi/180 - vaa
- 
+ ### solar zenith angle 
  sza <- dZenithAngle *pi/180
-  
+ ### Scattering angle 
  SA <- acos(-cos(sza)*cos(vza)-cos(raa)*sin(sza)*sin(vza)) * 180/pi
   
  # write.table(SA, "./COVE.data.2016.SA.reference.descending.Western.txt", sep="\t", row.names = FALSE, col.names = FALSE)

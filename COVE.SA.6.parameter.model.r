@@ -179,13 +179,13 @@ if (!exists("cove_data"))  cove_data <- read.table(file="./COVE.data.2016.v3.txt
  
  dZenithAngle <- (dZenithAngle + dParallax)/rad;
  
- # View zenith angle
+ ### View zenith angle
  vza <- 11.93 * pi/180 
- 
+ ### relative azimuth angle 
  raa <- dAzimuth*pi/180 - vaa
- 
+ ### solar zenith angle 
  sza <- dZenithAngle *pi/180
-  
+ ### scattering angle 
  SA <- acos(-cos(sza)*cos(vza)-cos(raa)*sin(sza)*sin(vza)) * 180/pi
  
   
