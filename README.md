@@ -41,7 +41,7 @@ Dr. David P. Roy (david.roy@sdstate.edu), GSCE, SDSU, US
 - vaa <- pi/2 - j     ### for ascending western edges  
 - vaa <- 3 * pi/2 - j ### for ascending eastern edges   
 
-References:
+### References:
 
 Li, Z., Zhang, H.K., & Roy, D.P., (2018). Investigation of Seninel-2 bidirectional hot-spot sensing conditions. 
 IEEE Transactions on Geoscience and Remote Sensing (under review).  
