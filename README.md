@@ -4,7 +4,9 @@ Code for calculation of COVE scattering angle and investigation of Sentinel-2 bi
 Contact information:
 
 Dr. Zhongbin Li (zhongbin.li@sdstate.edu), GSCE, SDSU, US
+
 Dr. Hankui K. Zhang (hankui.zhang@sdstate.edu), GSCE, SDSU, US
+
 Dr. David P. Roy (david.roy@sdstate.edu), GSCE, SDSU, US
 
 Usage:
