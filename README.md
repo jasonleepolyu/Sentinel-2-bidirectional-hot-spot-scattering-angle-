@@ -20,7 +20,7 @@ Usage:
 
 - implement "COVE.SA.6.parameter.model.r" to calculate the Sentinel-2 scattering angle on descending and ascending orbit western and eastern edges using 6 parameter model with time and location information provided by COVE KML files;
 
-NOTE some variables in "COVE.SA.6.parameter.model.r": 
+#### NOTE some variables in "COVE.SA.6.parameter.model.r": 
 
 #### Descending orbit or ascending orbit 
 - index <- ad=="ascending" ### for COVE Sentinel-2 ascending orbit granules 
