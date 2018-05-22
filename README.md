@@ -1,7 +1,7 @@
 # Sentinel-2-bidirectional-hot-spot-scattering-angle-
-Code for calculation of Sentinel-2 swath edge scattering angles and investigation of Sentinel-2 bidirectional hot-spot sensing condition 
+### Code for calculation of Sentinel-2 swath edge scattering angles and investigation of Sentinel-2 bidirectional hot-spot sensing condition 
 
-Contact information:
+### Contact information:
 
 Dr. Zhongbin Li (zhongbin.li@sdstate.edu), GSCE, SDSU, US
 Dr. Hankui K. Zhang (hankui.zhang@sdstate.edu), GSCE, SDSU, US
@@ -9,14 +9,14 @@ Dr. David P. Roy (david.roy@sdstate.edu), GSCE, SDSU, US
 
 Usage:
 
-4 parameter model 
+### 4 parameter model 
 
 - implement "Descending.west.sa.4.parameter.model.r" to calculate the Sentinel-2 scattering angle on descending orbit western edges using 4 parameter Sentinel-2 specific model; 
 - implement "Descending.east.sa.4.parameter.model.r" to calculate the Sentinel-2 scattering angle on descending orbit eastern edges using 4 parameter Sentinel-2 specific model;
 - implement "Ascending.west.sa.4.parameter.model.r" to calculate the Sentinel-2 scattering angle on ascending orbit western edges using 4 parameter Sentinel-2 specific model;
 - implement "Ascending.east.sa.4.parameter.model.r" to calculate the Sentinel-2 scattering angle on ascending orbit eastern edges using 4 parameter Sentinel-2 specific model;
 
-6 parameter model 
+### 6 parameter model 
 
 - implement "COVE.SA.6.parameter.model.r" to calculate the Sentinel-2 scattering angle on descending and ascending orbit western and eastern edges using 6 parameter model with time and location information provided by COVE KML files;
 
