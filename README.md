@@ -33,7 +33,7 @@ Usage:
 - West_lon[i] <- as.numeric(temp[7]) ### for COVE Sentinel-2  descending orbit western edges 
 - West_lat[i] <- as.numeric(temp[8]) ### for COVE Sentinel-2  descending orbit western edges 
 
-### Visual azimuth angle 
+#### Visual azimuth angle 
 - vaa <- j + 3*pi/2   ### for descending eastern edges 
 - vaa <- j + pi/2     ### for descending western edges
 - vaa <- pi/2 - j     ### for ascending western edges  
